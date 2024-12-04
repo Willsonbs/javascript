@@ -47,7 +47,7 @@ var soma = n1 + n2;
 window.alert('A soma dos dois números é '+ soma + '.')
 
 
-convertendo para String:
+Convertendo para String:
 
 
 var n1 = Number(window.prompt('Digite um número: '))
@@ -105,19 +105,19 @@ if (isNaN(idade)) {
 
 Operadores:
 aritméticos:
-+ - %  / **
+    + - %  / **
 Exemplos:
-5 + 2 = 7
-5 - 2 = 3
-5 * 2 = 10
-5 / 2 = 2.5
-5 % 2 = 1
-5 ** 2 = 25
+    5 + 2 = 7
+    5 - 2 = 3
+    5 * 2 = 10
+    5 / 2 = 2.5
+    5 % 2 = 1
+    5 ** 2 = 25
 
 OBS: Precedência de operadores (5 + 3 / 2 ) nesse exemplo não é 4 o resultado, considerando que o cálculo tenho sido feito nessa ordem: 5+3 primeiro e depois dividir por 2.
 
-Quando temos uma operação com soma e divisão, a divisão é feita primeiro:
-5 + 3 / 2 = 6.5
+Quando temos uma expressão com soma e divisão, a divisão é feita primeiro, se não estiver dentro de parenteses:
+    5 + 3 / 2 = 6.5
 Verificar a ordem: 
 ()
 ** 
@@ -127,15 +127,81 @@ Verificar a ordem:
 
 atribuição:
 atribuições simples.
-var a = 5 + 3 == 8
-var b = a % 5 == 3    ( a = 8 / 5 = 1 para 8 restam 3)
-var c = 5 * b ** 2 == 45    ( 5x b elevado a 2)
-var d = 10 - a / 2 == 6    (10 - 8 / 2 primeiro a divisão)
-var e = 6 * 2 / d == 2    (6 x 2 / 6)
-var f = b % e + 4 / e == 3   ( como a divisão e porcentagem aparecem na mesma linha, fazemos % e depois / depois somamos)
+    var a = 5 + 3 == 8
+    var b = a % 5 == 3    ( a = 8 / 5 = 1 para 8 restam 3)
+    var c = 5 * b ** 2 == 45    ( 5x b elevado a 2)
+    var d = 10 - a / 2 == 6    (10 - 8 / 2 primeiro a divisão)
+    var e = 6 * 2 / d == 2    (6 x 2 / 6)
+    var f = b % e + 4 / e == 3   ( como a divisão e porcentagem aparecem na mesma linha, fazemos % e depois / depois somamos)
+
+Auto atribuição:
+var n = 3
+n = n + 4 simplificado n += 4
+n = n - 5 simplificado n -= 5
+
+Incremento:
+    var x = 5
+    x = x + 1 simplificado x++
+Existe o pós Incremento e pré-Incremento
+
+pré-decremento e pós-decremento
+--n ou ++n  que tem a mesma função o que muda é a ordem
 
 relacionais:
+    Maior: 5 > 3 true
+    Menor: 5 < 3 false
+    Maior ou igual: 8 >= 8 true
+    Menor ou igual: 9 <= 7 false
+    Igualdade: 5 == 5 true
+    Diferente: 5!= 5 false
+
+    operador de identidade:
+    5 == 5 true
+    5 == '5'true
+    5 === 5 ( 3 sinais de igual verifica se é identico)
 
 lógicos:
 
+    ! negação
+        true or false
+    && conjunção
+        true && true == true
+        true && false == false
+        false && true == false
+        false && false == false
+    || disjunção
+        true || true == true
+        true || false == true
+        false || true == true
+        false || false == false
+    Exmplos: 
+        idade >= 15 && idade <= 17  // a idade está entre 15 e 17?
+        estado == RJ || estado == 'SP''  // o estado é RJ ou SP?
+        salario > 1500 && sexo != 'M'   // o salário é acima de 1500 e não é homem?
+
+    Obs: quando eu tenho operadores relacionais, aritmeticos e lógicos na mesma expressão, essa é a ordem:
+        * aritmeticos
+        * relacionais
+        * lógicos
+    Precedência:
+        aritmeticos (), **, /, +, %, -
+        relacionais >, <, >=, <=, , ==, !=,
+        lógicos na orderm
+            * !
+            * &&
+            * ||
 ternário:
+    ?, : dentro de uma mesma expressão.
+    teste ? true : false
+    média >= 7.0 ? "aprovado" : "reprovado"
+
+-------------------------------------------------------------------------
+
+Modulo C - DOM - Document Object Model
+Modelo de objetos para documentos.
+
+Arvore DOM:
+* window {Location, Document, History }
+    * Document { html (head {meta, title}, body{h1, p div}) }
+    
+        

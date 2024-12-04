@@ -22,12 +22,26 @@ header {
 .content {
     background-color: aquamarine;
     padding: 20px;
-    margin: 20px;
+    margin: 20px auto;
     border-radius: 3px;
+    max-width: 700px;
+    
+
 }
 
 .content h2 {
-    padding: 5px;
+    background-color: rgb(43, 226, 125);
+    padding: 10px;
     margin: 5px;
     font-size: 24px;
+    border-radius: 3px;
+}
+.content h3 {
+    
+    margin: 5px;
+}
+
+.content p {
+    margin: 13px;
+    font-size: 1.1em;
 }
