@@ -1,0 +1,141 @@
+
+Variáveis:
+
+* - Podem começar com Letra, $ ou _
+* - Não podem conter números
+* - Não podem ser palavras reservadas do JavaScript
+* - Não podem conter espaços
+* - É possível usar letras e números
+* - É possível usar acentos e símbolos
+
+Obserevar para usar nomes coerentes.
+Exemplo:
+nome = 'wilson'
+idade = '18''
+sexo = 'M'
+
+a = '10'
+A = '10'    Nesse caso existem duas variáveis. O melhor é padronizar
+Maiúsculas e minúsculas fazem diferença.
+
+Tipos primitivos:
+
+Number = 1, 10, -8, -10.8 (Infinity ou NaN)
+String: (google, JavaScript, Python)
+boolean = true or false
+
+null:
+undefined:
+object:
+array:
+function:
+
+Como converter
+Como fazer com que um número digitado em um prompt() possa ser usado em cálculos?
+
+var n1 = window.prompt('Digite um número: ')
+var n2 = window.prompt('Digite outro número: ')
+var soma = n1 + n2;
+window.alert('A soma dos dois números é '+ soma + '.')
+
+Neste exemplo acima, o navegador vai retornar a soma considerando que os dois valores são uma string = n1(5) + n2(5) = 55
+
+convertendo: preciso informar que a variável é do tipo Number
+var n1 = Number(window.prompt('Digite um número: '))
+var n2 = Number(window.prompt('Digite outro número: '))
+var soma = n1 + n2;
+window.alert('A soma dos dois números é '+ soma + '.')
+
+
+convertendo para String:
+
+
+var n1 = Number(window.prompt('Digite um número: '))
+var n2 = Number(window.prompt('Digite outro número: '))
+var soma = n1 + n2;
+window.alert('A soma dos dois números é '+ String(soma) + '.')
+
+Formatando strings:
+Como transformar um texto todo para letras maiúsculas ou minúsculas?
+
+var s = 'wilson''
+s.length = quantos caracteres a string tem
+s.toUpperCase = transforma em Maiúsculas
+s.toLowerCase = transforma em minúsculas
+
+Formatando números:
+
+var n1 = 1545.5
+n1 =1545.5
+n1.toFixed(2).replace('.', ',') = 1545.50
+n1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
+n1.toLocaleString('pt-br', {style: 'currency', currency: 'USD'})
+n1.toLocaleString('pt-br', {style: 'currency', currency: 'EUR'})
+
+Guardando um valor digitado no prompt:
+
+Guardar o valor digitado em um prompt() dentro de uma variável é bem simples. A função prompt() retorna o que o usuário digita em formato de string. Esse valor pode ser armazenado diretamente em uma variável para uso posterior. Exemplo:
+
+*var nome = window.prompt('Qual é o seu nome?');
+        window.alert(`Seu nome possui ${nome.length} letras.`);
+
+Exemplos cobinando conversão:
+
+números inteiros: 
+var idade = parseInt(prompt('Digite sua idade:'));
+console.log('A idade digitada foi: ' + idade);
+
+números decimais:
+var altura = parseFloat(prompt('Digite sua altura em metros:'));
+console.log('A altura digitada foi: ' + altura);
+
+números gerais:
+var preco = Number(prompt('Digite o preço do produto:'));
+console.log('O preço digitado foi: ' + preco);
+
+Validação de dados:
+Como o usuário pode digitar algo inválido (como texto quando o número é esperado), é uma boa prática validar a entrada. Exemplo:
+var idade = prompt('Digite sua idade:');
+if (isNaN(idade)) {
+    console.log('Por favor, insira um número válido.');
+} else {
+    idade = Number(idade); // Converte para número após validação
+    console.log('A idade digitada foi: ' + idade);
+}
+
+Operadores:
+aritméticos:
++ - %  / **
+Exemplos:
+5 + 2 = 7
+5 - 2 = 3
+5 * 2 = 10
+5 / 2 = 2.5
+5 % 2 = 1
+5 ** 2 = 25
+
+OBS: Precedência de operadores (5 + 3 / 2 ) nesse exemplo não é 4 o resultado, considerando que o cálculo tenho sido feito nessa ordem: 5+3 primeiro e depois dividir por 2.
+
+Quando temos uma operação com soma e divisão, a divisão é feita primeiro:
+5 + 3 / 2 = 6.5
+Verificar a ordem: 
+()
+** 
+*, /, % (se faz o símbolo que aparece primeiro)
+ +, - 
+
+
+atribuição:
+atribuições simples.
+var a = 5 + 3 == 8
+var b = a % 5 == 3    ( a = 8 / 5 = 1 para 8 restam 3)
+var c = 5 * b ** 2 == 45    ( 5x b elevado a 2)
+var d = 10 - a / 2 == 6    (10 - 8 / 2 primeiro a divisão)
+var e = 6 * 2 / d == 2    (6 x 2 / 6)
+var f = b % e + 4 / e == 3   ( como a divisão e porcentagem aparecem na mesma linha, fazemos % e depois / depois somamos)
+
+relacionais:
+
+lógicos:
+
+ternário:

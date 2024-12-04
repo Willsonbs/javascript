@@ -7,9 +7,9 @@
 }
 
 :root {
-  --color1:  #c39738;
+  --color1:  #d1af66;
   --color2:  #ffff96;
-  --color3:  #7f4311;
+  --color3:  #76ecec;
   --color4:  #5e4318;
   --color5:  #361f00;
 }
@@ -55,7 +55,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color:white;
+  background-color:rgba(255, 255, 255, 0.676);
   margin: 30px;
   border-radius: 3px;
   
@@ -66,6 +66,7 @@ header {
   display: flex; /* Torna o container flexível */
   justify-content: center; /* Centraliza o conteúdo horizontalmente */
   align-items: center; /* Centraliza o conteúdo verticalmente (se necessário) */
+  height: 400px;
 }
 
 .image > img {

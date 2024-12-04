@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body, html {
+    background-color: rgb(134, 104, 162);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    background-color: rgb(134, 104, 162);
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.content {
+    background-color: aquamarine;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 3px;
+}
+
+.content h2 {
+    padding: 5px;
+    margin: 5px;
+    font-size: 24px;
+}
