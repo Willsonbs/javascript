@@ -1,5 +1,5 @@
 
-Variáveis:
+#Variáveis:
 
 * - Podem começar com Letra, $ ou _
 * - Não podem conter números
@@ -8,7 +8,7 @@ Variáveis:
 * - É possível usar letras e números
 * - É possível usar acentos e símbolos
 
-Obserevar para usar nomes coerentes.
+#Obserevar para usar nomes coerentes.
 Exemplo:
 nome = 'wilson'
 idade = '18''
@@ -18,7 +18,7 @@ a = '10'
 A = '10'    Nesse caso existem duas variáveis. O melhor é padronizar
 Maiúsculas e minúsculas fazem diferença.
 
-Tipos primitivos:
+#Tipos primitivos:
 
 Number = 1, 10, -8, -10.8 (Infinity ou NaN)
 String: (google, JavaScript, Python)
@@ -30,7 +30,7 @@ object:
 array:
 function:
 
-Como converter
+#Como converter:
 Como fazer com que um número digitado em um prompt() possa ser usado em cálculos?
 
 var n1 = window.prompt('Digite um número: ')
@@ -47,7 +47,7 @@ var soma = n1 + n2;
 window.alert('A soma dos dois números é '+ soma + '.')
 
 
-Convertendo para String:
+#Convertendo para String:
 
 
 var n1 = Number(window.prompt('Digite um número: '))
@@ -55,7 +55,7 @@ var n2 = Number(window.prompt('Digite outro número: '))
 var soma = n1 + n2;
 window.alert('A soma dos dois números é '+ String(soma) + '.')
 
-Formatando strings:
+#Formatando strings:
 Como transformar um texto todo para letras maiúsculas ou minúsculas?
 
 var s = 'wilson''
@@ -63,7 +63,7 @@ s.length = quantos caracteres a string tem
 s.toUpperCase = transforma em Maiúsculas
 s.toLowerCase = transforma em minúsculas
 
-Formatando números:
+#Formatando números:
 
 var n1 = 1545.5
 n1 =1545.5
@@ -72,28 +72,28 @@ n1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
 n1.toLocaleString('pt-br', {style: 'currency', currency: 'USD'})
 n1.toLocaleString('pt-br', {style: 'currency', currency: 'EUR'})
 
-Guardando um valor digitado no prompt:
+#Guardando um valor digitado no prompt:
 
 Guardar o valor digitado em um prompt() dentro de uma variável é bem simples. A função prompt() retorna o que o usuário digita em formato de string. Esse valor pode ser armazenado diretamente em uma variável para uso posterior. Exemplo:
 
 *var nome = window.prompt('Qual é o seu nome?');
         window.alert(`Seu nome possui ${nome.length} letras.`);
 
-Exemplos cobinando conversão:
+#Exemplos cobinando conversão:
 
-números inteiros: 
+#números inteiros: 
 var idade = parseInt(prompt('Digite sua idade:'));
 console.log('A idade digitada foi: ' + idade);
 
-números decimais:
+#números decimais:
 var altura = parseFloat(prompt('Digite sua altura em metros:'));
 console.log('A altura digitada foi: ' + altura);
 
-números gerais:
+#números gerais:
 var preco = Number(prompt('Digite o preço do produto:'));
 console.log('O preço digitado foi: ' + preco);
 
-Validação de dados:
+#Validação de dados:
 Como o usuário pode digitar algo inválido (como texto quando o número é esperado), é uma boa prática validar a entrada. Exemplo:
 var idade = prompt('Digite sua idade:');
 if (isNaN(idade)) {
@@ -103,8 +103,8 @@ if (isNaN(idade)) {
     console.log('A idade digitada foi: ' + idade);
 }
 
-Operadores:
-aritméticos:
+#Operadores:
+#aritméticos:
     + - %  / **
 Exemplos:
     5 + 2 = 7
@@ -125,7 +125,7 @@ Verificar a ordem:
  +, - 
 
 
-atribuição:
+#atribuição:
 atribuições simples.
     var a = 5 + 3 == 8
     var b = a % 5 == 3    ( a = 8 / 5 = 1 para 8 restam 3)
@@ -139,7 +139,7 @@ var n = 3
 n = n + 4 simplificado n += 4
 n = n - 5 simplificado n -= 5
 
-Incremento:
+#Incremento:
     var x = 5
     x = x + 1 simplificado x++
 Existe o pós Incremento e pré-Incremento
@@ -147,7 +147,7 @@ Existe o pós Incremento e pré-Incremento
 pré-decremento e pós-decremento
 --n ou ++n  que tem a mesma função o que muda é a ordem
 
-relacionais:
+#relacionais:
     Maior: 5 > 3 true
     Menor: 5 < 3 false
     Maior ou igual: 8 >= 8 true
@@ -160,7 +160,7 @@ relacionais:
     5 == '5'true
     5 === 5 ( 3 sinais de igual verifica se é identico)
 
-lógicos:
+#lógicos:
 
     ! negação
         true or false
@@ -190,7 +190,7 @@ lógicos:
             * !
             * &&
             * ||
-ternário:
+#ternário:
     ?, : dentro de uma mesma expressão.
     teste ? true : false
     média >= 7.0 ? "aprovado" : "reprovado"
@@ -200,8 +200,105 @@ ternário:
 Modulo C - DOM - Document Object Model
 Modelo de objetos para documentos.
 
-Arvore DOM:
+#Arvore DOM:
 * window {Location, Document, History }
-    * Document { html (head {meta, title}, body{h1, p div}) }
+    * Document 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DOM</title>
+</head>
+<body>
+    <header>
+        <h1>DOM Manipulation</h1>
+        <p>Manipulate the DOM using JavaScript. Document Object Model</p>
+    </header>
+    <main id="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est necessitatibus consequatur illo placeat! Amet facilis eos commodi! Asperiores, atque sed. Mollitia sunt, totam voluptate ex minus placeat numquam saepe possimus.
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
     
         
+#Existem várias maneiras de navegar pelos elementos:
+    por marca
+    por id
+    por nome
+    por classe
+    por seletor
+
+#Por marca (tag):
+<html>
+    <head>
+    </head>
+<body>
+    <p> Alguma texto</p>
+</body>
+</html>
+
+    getElementsByTagName()
+
+    var p1 = window.document.getElementsByTagName('p')[0]
+    window.document.write('Parágrafo: ' + p1.innerHTML)
+    p1.style.color = 'white'
+
+#Por ID:
+<html>
+    <head>
+    </head>
+<body>
+    <div id='content'> Alguma texto</div>
+</body>
+</html>
+
+    var d = window.document.getElementById('content')
+    d.style.background = 'green'
+    //d.innerText = 'Olá MUndo'
+    window.document.getElementById('content').innerText = 'Olá MUndo'
+
+#Por name:
+
+    <html>
+        <head>
+        </head>
+        <body>
+            <div name = 'content'> Alguma texto</div>
+        </body>
+    </html>
+
+    var x = window.document.getElementsByName('content')[0]
+    x.innerText = 'Olá Mundo'
+
+#Por classe:
+
+    <html>
+        <head>
+        </head>
+        <body>
+            <div class= 'content'> Alguma texto</div>
+        </body>
+    </html>
+
+    var x = window.document.getElementsByClassName('content')[0]
+    x.innerText = 'Olá Mundo'
+
+#Por Seletor:
+
+    <html>
+        <head>
+        </head>
+        <body>
+            <div id= 'content'> Alguma texto</div>
+        </body>
+    </html>
+
+    var x = window.document.queySelector('div#content')
+    x.style.color = 'black'
+
+    se for class fica assim ('.content')
+    
