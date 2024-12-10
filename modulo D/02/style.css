@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    color: aliceblue;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    background-color: rgb(60, 103, 159);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 90vw;
+    border-radius: 3px;
+}
+
+main > label {
+    margin: 10px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+main > input {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 3px;
+    
+}
+
+main > button {
+    padding: 10px;
+    border: 2px solid rgb(71, 71, 181);
+    background-color: rgb(65, 232, 135);
+    font-size: 0.8em;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+main > button:hover {
+    background-color: rgb(71, 71, 181);
+    color: white;
+}
+
+#mensagem {
+    margin: 10px;
+    font-size: 1.2em;
+    font-weight: 500;
+    
+}

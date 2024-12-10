@@ -301,4 +301,170 @@ Modelo de objetos para documentos.
     x.style.color = 'black'
 
     se for class fica assim ('.content')
+
+------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------
+
+Funções e Eventos
+
+#1. Evento click
+
+	•	Ocorre quando o usuário clica em um elemento, como um botão ou um link.
+	•	Muito usado para interações, como enviar formulários, abrir modais ou executar funções.
+
+Exemplo:
+
+    #html
+        <button id="meuBotao">Clique aqui</button>
+    #javaScript
+        document.getElementById('meuBotao').addEventListener('click', () => {
+        alert('Botão clicado!');
+        });
+
+#2. Evento input
+
+        •	Disparado sempre que o valor de um campo de formulário (como <input> ou <textarea>) é alterado.
+        •	Útil para capturar e processar entradas em tempo real, como validação de campos ou busca dinâmica.
     
+Exemplo:
+
+    #html
+        <input id="campoTexto" type="text" placeholder="Digite algo">
+    #JavaScript
+        document.getElementById('campoTexto').addEventListener('input', (e) => {
+        console.log('Valor atual:', e.target.value);
+        });
+
+
+#3. Evento mouseover
+
+        •	Ocorre quando o cursor do mouse passa sobre um elemento.
+        •	Usado para destacar elementos, exibir dicas (tooltips), ou criar efeitos visuais.
+    
+Exemplo:
+
+#html
+    <p id="meuParagrafo">Passe o mouse sobre este texto.</p>
+#JavaScript
+    document.getElementById('meuParagrafo').addEventListener('mouseover', () => {
+    document.getElementById('meuParagrafo').style.color = 'blue';
+    });
+
+
+
+#Outros Eventos Comuns
+
+    Além dos citados, aqui estão mais exemplos:
+        •	keydown: Quando uma tecla é pressionada.
+        •	submit: Quando um formulário é enviado.
+        •	scroll: Quando o usuário rola a página.
+
+------------------------------------------------------------
+
+#Funções
+
+Uma função em JavaScript é um bloco de código reutilizável que executa uma tarefa específica ou calcula um valor. Funções ajudam a organizar e modularizar o código, tornando-o mais legível, reutilizável e fácil de manter.
+
+#Componentes de uma Função
+
+	1.	Definição: Declaração do bloco de código que será executado.
+	2.	Parâmetros: Valores (opcionais) que a função pode receber para trabalhar.
+	3.	Retorno (opcional): Valor ou resultado que a função devolve ao final da execução.
+
+#JavaScript
+
+    function nomeDaFuncao(parâmetro1, parâmetro2) {
+    // Bloco de código a ser executado
+    return resultado; // (Opcional) Retorna um valor
+}
+Exemplo 1:  Soma de dois números
+#JavaScript
+
+    function somar(a, b) {
+        return a + b;
+}
+
+// Chamada da função
+let resultado = somar(5, 3);
+console.log(resultado); // Saída: 8
+
+#Vantagens do Uso de Funções
+
+	1.	Reutilização de Código: Você pode chamar a mesma função várias vezes com diferentes valores.
+	2.	Organização: Ajuda a dividir o código em partes menores e mais gerenciáveis.
+	3.	Reduz Redundância: Evita repetir o mesmo bloco de código várias vezes.
+	4.	Manutenção Facilitada: Alterações feitas na função afetam todas as chamadas automaticamente.
+
+#Tipos de Funções em JavaScript
+
+#1.	Declaração de Função (Function Declaration):
+
+	•	Funções definidas com a palavra-chave function.
+	•	Podem ser chamadas antes de sua definição devido ao hoisting.
+    
+    function cumprimentar() {
+        console.log('Olá!');
+    }
+    cumprimentar(); // Saída: Olá!
+
+
+#2.	Funções Anônimas (Function Expressions):
+	•	Funções atribuídas a variáveis.
+	•	Não têm nome e não são carregadas pelo hoisting.
+
+    const somar = function(a, b) {
+        return a + b;
+    };
+    console.log(somar(2, 3)); // Saída: 5
+
+
+#3.	Arrow Functions:
+
+	•	Introduzidas no ES6.
+	•	São mais concisas e não possuem seu próprio this.
+
+    const multiplicar = (a, b) => a * b;
+    console.log(multiplicar(2, 3)); // Saída: 6
+
+
+#Funções sem Retorno
+
+    Funções nem sempre precisam retornar valores. Algumas simplesmente executam ações, como exibir uma mensagem no console ou atualizar um elemento na página.
+
+Exemplo:
+    function mostrarMensagem() {
+        console.log('Bem-vindo ao JavaScript!');
+    }
+    mostrarMensagem(); // Saída: Bem-vindo ao JavaScript!
+
+
+#Funções com valores Padrão:
+
+    Funções podem ter valores padrão para seus parâmetros:
+
+Exemplo:
+    function cumprimentar(nome = 'Visitante') {
+        console.log(`Olá, ${nome}!`);
+    }
+    cumprimentar(); // Saída: Olá, Visitante!
+    cumprimentar('Maria'); // Saída: Olá, Maria!
+
+
+#Resumo
+
+    Funções são blocos fundamentais na programação em JavaScript. Elas permitem:
+        •	Modificar e manipular dados.
+        •	Dividir o código em partes reutilizáveis.
+        •	Tornar o desenvolvimento mais eficiente.
+
+--------------------------------------------------------
+
+CONDIÇÕES
+
+Tipos de CONDIÇÕES:
+    condição simples:
+        
+    condição

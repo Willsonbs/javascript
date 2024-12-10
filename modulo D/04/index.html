@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sistema de Multas</title>
+    
+</head>
+<body>
+    <header>
+        <h1>Sistema de Multas por Excesso de Velocidade</h1>
+    </header>
+
+    <main>
+        <p>Insira a velocidade registrada do veículo para verificar se há multa:</p>
+        <!-- Campo de entrada para a velocidade -->
+        <label for="velocidade">Velocidade do veículo (km/h):</label>
+        <input type="number" id="velocidade" placeholder=" 80">
+        <!-- Botão para calcular a multa -->
+        <button id="check" onclick="calculaMulta()">Calcular Multa</button>
+        <!-- Elemento para exibir o resultado -->
+        <p id="multaResultado"></p>
+    </main>
+
+
+    <script defer src="script.js"></script>
+</body>
+</html>

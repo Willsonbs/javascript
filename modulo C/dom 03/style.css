@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(242, 115, 242);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    text-align: center;
+    padding: 20px;
+   
+}
+
+header p {
+    background-color: aquamarine;
+    max-width: 768px;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+#myButton {
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 3px;
+    box-shadow: 2pc solid black;
+    cursor: pointer;
+    background-color: rgb(54, 229, 86);
+}

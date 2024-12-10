@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(205, 54, 54);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    color: white;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+    width: 70vw;
+    background-color: aliceblue;
+    font-size: 1em;
+    display: flex;
+    flex-direction: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 40vh;
+    margin: 5px auto;
+    border-radius: 3px;
+}
+
+#velocidade {
+    padding: 10px;
+    margin: 10px;
+    border-style: groove;
+}
+
+#check {
+    margin: 10px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+#multaResultado {
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: groove;
+}

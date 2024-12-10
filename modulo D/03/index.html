@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sistema de multas</title>
+</head>
+<body>
+    <header>
+        <h1>Multa por velocidade</h1>
+    </header>
+    <main class="content">
+        <form id="multaForm">
+            <label for="velocidade" id="title">Velocidade:</label>
+
+            <input type="number" id="velocidade" name="velocidade" required >km/h
+
+            <input type="button" id="check" value="Verificar" onclick="calculaMulta()">
+
+            <div id="resultadoMulta"></div>
+        </form>
+    </main>
+    
+   
+<script src="script.js"></script>    
+</body>
+</html>

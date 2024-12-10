@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(130, 61, 183);
+    color: aliceblue;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.content {
+    background-image: linear-gradient(to right, rgb(91, 203, 138) ,  rgb(42, 191, 183) );
+    width: 70vw;
+    border-radius: 3px;
+    padding: 30px;
+    margin: 10px auto;
+}
+
+#multaForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+#title {
+    margin: 20px auto;
+    font-size: large;
+}
+
+#velocidade {
+    padding: 10px;
+    margin: 5px auto;
+    border-radius: 3px;
+
+}
+
+#check {
+    margin: 10px;
+    padding: 10px;
+    font-size: 0.9em;
+    background-color: rgb(195, 43, 226);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#resultadoMulta {
+    margin: 20px auto;
+    font-size: 0.9em;
+    border: 3px solid white;
+    padding: 15px;
+}
