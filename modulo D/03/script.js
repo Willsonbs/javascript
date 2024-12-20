@@ -7,7 +7,7 @@ function calculaMulta() {
     res.innerHTML = `<p> Sua velocidade é de ${velocidade} km/h </p>`
 
     if (velocidade > 80) {
-        res.innerHTML += `Você foi <strong>MULTADO</strong> por exccesso de velocidade`;
+        res.innerHTML += `Você foi <strong>MULTADO</strong> por exccesso de velocidade!`;
     }
-    res.innerHTML += `<p> Dirija sempre com sinto de segurança</p>`
+    res.innerHTML += `<p> Dirija sempre com sinto de segurança!</p>`
 }
