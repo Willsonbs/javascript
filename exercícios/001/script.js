@@ -1,7 +1,7 @@
 function carregar(){
     let msg = window.document.getElementById('msg');
     let img = window.document.getElementById('image');
-    let date = new Date()
+    let date = new Date();
     let hour = date.getHours();
     let minutes = date.getMinutes();
     msg.innerHTML = `Agora são ${hour}:${minutes < 10 ? '0' : ''}${minutes} horas.`
