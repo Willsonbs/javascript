@@ -23,7 +23,7 @@ function count() {
     }
 
     //construindo a sequência de contagem
-    let saida = "<p>Contando: </p>";
+    let saida = "<p>Resultado: </p>";
     if (start <= end){
         //contagem crescente
         for (let i = start; i<= end; i += step) {
