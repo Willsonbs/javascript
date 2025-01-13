@@ -17,7 +17,7 @@ function verificarIdade(){
             if (idade >=0 && idade < 10){
                 //criânça
                 img.setAttribute('src', '../002/assets/baby-boy.jpg');
-            } else if (idade < 18){
+            } else if (idade < 21){
                 //adolescente
                 img.setAttribute('src', '../002/assets/teen-boy.jpg');;
             } else if (idade < 50){
@@ -33,7 +33,7 @@ function verificarIdade(){
             if (idade >=0 && idade < 10){
                 //criânça
                 img.setAttribute('src', '../002/assets/baby-girl.jpg');
-            } else if (idade < 18){
+            } else if (idade < 21){
                 //adolescente
                 img.setAttribute('src', '../002/assets/teen-girl.jpg');
             } else if (idade < 50){

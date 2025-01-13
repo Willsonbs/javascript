@@ -49,6 +49,8 @@ section div p {
     padding: 10px;
     cursor: pointer;
     border: none;
+    display: flex;
+    justify-content: center;
 }
 
 footer {
