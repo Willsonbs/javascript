@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Exercícios de condições</title>
+</head>
+<body>
+    <header>
+        <h1>Contador Personalizado</h1>
+    </header>
+    <main>
+        <section>
+            <div id="box">
+            <label for="start">Início:</label>
+            <input type="number" id="start" placeholder="Ex: 2" min="0">
+            <br>
+            <label for="end">Fim:</label>
+            <input type="number" id="end" placeholder="Ex:100" min="0">
+            <br>
+            <label for="step">Intervalo:</label>
+            <input type="number" id="step" placeholder="Ex: 5" min="0">
+            </div>
+            <div id="resultado"></div>
+            <div id="actions">
+                <button type="button" id="count" onclick="count()">Enviar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Curso em Vídeo 2024 - Exercícios de condições</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
