@@ -462,9 +462,17 @@ Exemplo:
 
 --------------------------------------------------------
 
-CONDIÇÕES
+#Variáveis
+    Variáveis Simples: Só conseguem armazenar um valor por vez
+Exemplo: Só
 
-Tipos de CONDIÇÕES:
-    condição simples:
-        
-    condição
+    Variáveis Compostas: Devem ser capazes de armazenar vários valores em uma mesma estrutura.
+Exemplo: 
+
+    vaga a = [ 0,  1,  2,] (exemplo da vaga de carro)
+    a = a variável recebe o nome de array ou vetor
+    o vetor é composto pelo elemento. O elemento de um vetor é um par que agrupa o espaço da memória, o valor colado dentro dele e um índice.
+    Índice = [ 0, 1, 2,]
+    O conteúdo de cada elemento, que seria "os carros nas vagas".
+Exemplo: 
+    let num = [ , , ]

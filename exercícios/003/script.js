@@ -18,7 +18,7 @@ function count() {
         return;
     }
     if (step <= 0) {
-        resultado.innerHTML = "<p>O passo deve ser maior que zero</p>";
+        resultado.innerHTML = "<p>O intervalo deve ser maior que zero!</p>";
         return;
     }
 

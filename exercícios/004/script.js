@@ -9,13 +9,13 @@ function gerarTabuada (){
 
     //validacão
     if (isNaN(numero) || numero < 0 || numero > 100){
-        resultado.innerHTML = "<p>Informe um número entre 1 e 100</p>";
+        resultado.innerHTML = "<p>Informe um número entre 1 e 10</p>";
         return;
     }
 
     //construindo a tabuada
     let saida = `<ul>`;
-    for (let i = 1; i <= 100; i++) {
+    for (let i = 1; i <= 10; i++) {
         saida += `<li>${numero} x ${i} = ${numero * i}</li>`;
     }
     saida += "</ul>";
