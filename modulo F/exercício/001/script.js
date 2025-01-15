@@ -7,7 +7,7 @@ function analyzeNumber(){
     if (numero < 1 || numero > 100 || lista.includes(numero)){
         alert('Valor inválido ou já adicionado');
         numberInput.value = "";
-        numeroInput.focus();
+        numberInput.focus();
         return;
     }
 
@@ -15,9 +15,8 @@ function analyzeNumber(){
     const option = document.createElement('option');
     option.text = `Valor: ${numero} adicionado`;
     select.add(option);
-
-    numeroInput.value = "";
-    numeroInput.focus();
+    numberInput.value = "";
+    numberInput.focus();
 }
 
 function analisar() {

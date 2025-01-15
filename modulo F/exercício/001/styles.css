@@ -23,7 +23,7 @@ header {
 }
 
 main {
-    background-color: rgb(123, 181, 232);
+    background-color: rgb(48, 200, 190);
     padding: 20px;
     margin: 20px auto;
     width: 90%;
@@ -57,10 +57,6 @@ main {
     text-align: center;
     margin-bottom: 10px;
 }
-
-
-
-
 
 #add {
     height: 40px;
@@ -103,7 +99,7 @@ main {
 #valores {
     padding: 5px;
     font-size: 1em;
-    font-weight: bold;
+    
     text-align: center;
     margin-bottom: 20px;
     border-radius: 4px;
@@ -123,6 +119,7 @@ main {
     border-radius: 4px;
     text-align: center;
     font-size: 1em;
+    line-height: 1.5em;
 }
 
 footer {
