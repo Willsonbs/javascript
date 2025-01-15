@@ -489,5 +489,158 @@ Exemplo:
         .ação
         .retorno
 
+#Exercicio do modulo F comentado
+
+// Declaração de uma lista vazia para armazenar os números inseridos
+let lista = [];
+
+// Função para adicionar números à lista e ao elemento <select>
+function adicionar() {
+    // Captura o valor do input com ID "numero"
+    const numeroInput = document.getElementById("numero");
+    // Converte o valor para um número (o input sempre retorna uma string)
+    const numero = Number(numeroInput.value);
+    // Captura o elemento <select> onde os valores serão exibidos
+    const select = document.getElementById("valores");
+
+    // Valida se o número está entre 1 e 100 e se já foi adicionado
+    if (numero < 1 || numero > 100 || lista.includes(numero)) {
+        alert("Número inválido ou já adicionado.");
+        // Limpa o campo e coloca o foco para facilitar nova entrada
+        numeroInput.value = "";
+        numeroInput.focus();
+        return; // Sai da função para evitar adicionar um valor inválido
+    }
+
+    // Adiciona o número à lista
+    lista.push(numero);
+
+    // Cria um novo elemento <option> para exibir no <select>
+    const option = document.createElement("option");
+    option.text = `Valor ${numero} adicionado.`; // Texto exibido no <select>
+    select.add(option); // Adiciona o <option> ao <select>
+
+    // Limpa o campo de entrada e coloca o foco novamente
+    numeroInput.value = "";
+    numeroInput.focus();
+}
+
+// Função para analisar os números na lista e exibir informações
+function analisar() {
+    // Se a lista estiver vazia, alerta o usuário
+    if (lista.length === 0) {
+        alert("Adicione números antes de analisar.");
+        return;
+    }
+
+    // Calcula as informações solicitadas:
+    const total = lista.length; // Quantidade de números
+    const maior = Math.max(...lista); // Maior número
+    const menor = Math.min(...lista); // Menor número
+    const soma = lista.reduce((acc, num) => acc + num, 0); // Soma de todos os números
+    const media = soma / total; // Média dos números
+
+    // Atualiza a div de resultados com as informações
+    const resultadoDiv = document.getElementById("resultado");
+    resultadoDiv.innerHTML = `
+        <p>Ao todo, temos ${total} números cadastrados.</p>
+        <p>O maior valor informado foi ${maior}.</p>
+        <p>O menor valor informado foi ${menor}.</p>
+        <p>Somando todos os valores, temos ${soma}.</p>
+        <p>A média dos valores digitados é ${media.toFixed(2)}.</p>
+    `;
+}
+
+// Função para limpar os dados e reiniciar a interface
+function limpar() {
+    // Reseta a lista de números
+    lista = [];
+    // Limpa os elementos da interface
+    document.getElementById("valores").innerHTML = ""; // Limpa o <select>
+    document.getElementById("resultado").innerHTML = ""; // Limpa os resultados
+    document.getElementById("numero").value = ""; // Limpa o campo de entrada
+    document.getElementById("numero").focus(); // Coloca o foco no campo de entrada
+}
+
+Resumo das funções:
+	1.	adicionar:
+	•	Verifica se o número está no intervalo correto (1 a 100) e se já foi adicionado.
+	•	Adiciona o número à lista lista e ao <select> para exibição.
+	2.	analisar:
+	•	Processa os dados da lista (total de números, maior, menor, soma e média).
+	•	Exibe essas informações formatadas na div resultado.
+	3.	limpar:
+	•	Reseta a lista de números e todos os elementos da interface para começar do zero.
+
+Conceitos envolvidos:
+	•	Arrays: Usados para armazenar os números inseridos (lista).
+	•	DOM Manipulation: Uso do document.getElementById para interagir com os elementos HTML.
+	•	Métodos de array:
+	•	push: Adiciona um item ao final do array.
+	•	includes: Verifica se um item já existe no array.
+	•	reduce: Soma todos os valores do array.
+	•	Math.max e Math.min: Encontram o maior e o menor valor do array.
+	•	String Literals: Usados para formatar o texto exibido (${variável}).
+
+ 😊
 
 
+
+Essa linha é um exemplo do uso do método reduce() em arrays no JavaScript. Vamos dividi-la em partes para entender como ela funciona:
+
+Código:
+
+const soma = lista.reduce((acc, num) => acc + num, 0);
+
+Explicação:
+	1.	reduce():
+	•	O método reduce() percorre o array e aplica uma função de “acumulação”, que combina os elementos do array em um único valor.
+	•	A função passada para reduce() recebe dois parâmetros principais:
+	•	acc (acumulador): Um valor que “carrega” o resultado parcial da operação enquanto o método percorre o array.
+	•	num (valor atual): O elemento atual do array que está sendo processado.
+	•	O segundo argumento de reduce() (0 neste caso) define o valor inicial do acumulador.
+	2.	Função de callback (acc, num) => acc + num:
+	•	Esta é uma função “flecha” (arrow function) que define como combinar o acumulador e o valor atual.
+	•	Aqui, ela simplesmente soma os dois valores: o acumulador (acc) e o valor atual (num).
+	3.	0 (valor inicial):
+	•	Este é o valor inicial do acumulador.
+	•	Sem ele, o reduce() usaria o primeiro elemento do array como valor inicial, o que pode causar problemas em arrays vazios.
+
+Como funciona na prática:
+
+Se o array lista contém os números [1, 2, 3, 4], o reduce() funciona assim:
+	•	Primeira iteração:
+	•	acc = 0 (valor inicial), num = 1
+	•	Retorno: 0 + 1 = 1
+	•	Segunda iteração:
+	•	acc = 1 (resultado anterior), num = 2
+	•	Retorno: 1 + 2 = 3
+	•	Terceira iteração:
+	•	acc = 3 (resultado anterior), num = 3
+	•	Retorno: 3 + 3 = 6
+	•	Quarta iteração:
+	•	acc = 6 (resultado anterior), num = 4
+	•	Retorno: 6 + 4 = 10
+
+Ao final, o acumulador (acc) conterá o valor 10, que é a soma de todos os números no array.
+
+Resultado:
+
+No final do reduce(), o valor retornado é armazenado na variável soma, que conterá o total de todos os valores no array lista.
+
+Vantagens de reduce():
+	•	Muito útil para resumir os dados de um array (como somar, multiplicar, encontrar o maior valor, etc.).
+	•	É declarativo e evita loops manuais (for ou while).
+
+
+
+    Equivalente usando um for:
+
+    Se você quisesse fazer o mesmo sem reduce(), poderia usar um loop assim:
+
+    let soma = 0;
+    for (let i = 0; i < lista.length; i++) {
+        soma += lista[i];
+    }
+
+    Ambas as abordagens são válidas, mas o reduce() é mais conciso e idiomático no JavaScript moderno.

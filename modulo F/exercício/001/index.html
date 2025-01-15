@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Exercícios de funções</title>
+</head>
+<body>
+    <header>
+        <h1>Analisandor de números no array</h1>
+    </header>
+    <main>
+        <section>
+            <div id="box-one">
+                <h4>Abaixo digite um número de ( 1 a 100 ) por favor</h4>
+                <label for="number"></label>
+                <input type="number" id="numero" min="1" max="100">
+                <button id="add" onclick="analyzeNumber()">Adicionar</button>
+            </div>
+            <div id="box-two">
+                <button id="btnAnalisar" onclick="analisar()">Analisar</button>
+                <button id="btnLimpar" onclick="limpar()">Limpar</button>
+                <br><br>
+                <select id="valores" size="10" style="width: 100%;"></select>
+            </div>
+            <div id="resultado"></div>
+            
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Curso em Vídeo 2024 - Exercícios de condições</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
