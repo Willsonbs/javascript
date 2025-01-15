@@ -476,3 +476,18 @@ Exemplo:
     O conteúdo de cada elemento, que seria "os carros nas vagas".
 Exemplo: 
     let num = [ , , ]
+
+#Functions
+
+    São ações executadas assim que são chamadas ou em decorrência de algum evento.
+
+    Uma função pode receber parâmetros e retornar um resultado.
+
+    partes da função: 
+        .chamadas
+        .parâmetro
+        .ação
+        .retorno
+
+
+
