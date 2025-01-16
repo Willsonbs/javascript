@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+   
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    margin: 20px auto;
+
+}
+
+header h1 {
+    color: aliceblue;
+}
+
+#box img {
+    border-radius: 50%;
+    text-align: center;
+    
+}
+
+main {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+#box section input  {
+    padding: 12px;
+    width: 250px;
+    background-color: rgb(225, 248, 180);
+    border: none;
+    font-weight: bold;
+    font-size: 1em;
+    border: 2px solid rgba(85, 109, 101, 0.726);
+    border-radius: 3px;
+}
+
+#btnmoeda {
+    padding: 10px;
+    background-color: rgb(78, 235, 78);
+    cursor: pointer;
+    border: none;
+    width: 120px;
+    margin-top: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    border: 2px solid rgba(85, 109, 101, 0.726);
+    border-radius: 3px;
+}
+
+#btnmoeda:hover {
+    background-color: darkgreen;
+}
+
+footer {
+    text-align: center;
+    margin: 20px auto;
+}

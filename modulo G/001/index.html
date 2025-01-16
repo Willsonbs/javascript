@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Exercícios de condições</title>
+</head>
+<body>
+    <header>
+        <h1>Finance Exchange</h1>
+    </header>
+    <main id="box">
+        <img src="./exchange.png" alt="Imagem de moeda"><br>
+        <section>
+            <span class="cur"></span>
+            <input id="usd" type="text" placeholder="US$"
+            data-placeholder="US$"></input>
+        </section>
+        <section>
+            <span class="cur"></span>
+            <input id="brl" type="text" placeholder="BR$" data-placeholder="BR$"></input>
+        </section>
+        <div>
+            <button id="btnmoeda" type="submit" onclick="exchange()">Converter</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Curso em Vídeo 2024 - Desenvolvimento Web</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
