@@ -644,3 +644,28 @@ Vantagens de reduce():
     }
 
     Ambas as abordagens são válidas, mas o reduce() é mais conciso e idiomático no JavaScript moderno.
+
+--------------------------------------------------------------------
+
+#objetos
+
+    existe uma diferença entre array e objeto.
+
+Exemplo array:
+
+let lista = [5, 8, 4]
+os índices:
+0 = 5
+1 = 8
+2 = 4
+
+Exemplo objeto:
+
+let amigo = {nome:'josé', sexo:'M', peso:'86', engordar(p){}}
+os índices:
+nome = josé
+sexo = M
+peso = 86
+engordar = [function]
+
+
